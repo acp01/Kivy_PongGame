@@ -1,2 +1,1 @@
-# Projects_1
-Projects for learning 
+This Project is learning based project from a Youtube tutorial.
