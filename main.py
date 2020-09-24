@@ -9,16 +9,6 @@ from kivy.properties import NumericProperty, ReferenceListProperty, ObjectProper
 from kivy.vector import Vector
 from kivy.clock import Clock
 from random import randint
-from plyer.vibrator import vibrate
-from jnius import autoclass
-
-vibrate(10) 
-PythonActivity = autoclass('org.kivy.android.PythonActivity')
-activity = PythonActivity.mActivity
-Context = autoclass('android.content.Context')
-vibrator = activity.getSystemService(Context.VIBRATOR_SERVICE)
-vibrator.vibrate(10000)  # the argument is in milliseconds
-
 
 class PongPaddle(Widget):
     score = NumericProperty(0)
