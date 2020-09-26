@@ -71,5 +71,3 @@ class PongApp(App):
         return game
 
 PongApp().run()
-
-
